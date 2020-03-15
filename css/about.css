@@ -1,0 +1,21 @@
+.content>.content-cantainer{
+    margin-top: 20px;
+    margin-left: 10%;
+    width: 70%;
+}
+.content>.content-cantainer>h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.content>.content-cantainer>p{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.content>.content-cantainer>p>a{
+    color: #1756a9;
+}
+.content>.content-cantainer>p>a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
