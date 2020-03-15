@@ -1,0 +1,14 @@
+.content>.content-cantainer{
+    margin-top: 20px;
+    margin-left: 10%;
+}
+.content>.content-cantainer>ul>li{
+    padding: 10px;
+}
+.content>.content-cantainer>ul>li>a{
+    color: #1756a9;
+}
+.content>.content-cantainer>ul>li>a:hover{
+    color: black;
+    text-decoration: underline;
+}
