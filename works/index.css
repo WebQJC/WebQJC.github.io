@@ -1,0 +1,45 @@
+.content{
+    margin-bottom: 150px;
+}
+.content>.content-cantainer{
+    margin-top: 20px;
+    margin-left: 10%;
+}
+.content>.content-cantainer>.title{
+    margin-bottom: 30px;
+}
+.content>.content-cantainer>ul>li{
+    padding: 10px;
+}
+.content>.content-cantainer>ul>li>.synoosis{
+    font-size: 15px;
+    width: 70%;
+    height: 30px;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    color: #b2a5a5;
+}
+.content>.content-cantainer>ul>li>.synoosis>span{
+    color: black;
+}
+.content>.content-cantainer>ul>li>.synoosis>h5{
+    float: left;
+}
+.content>.content-cantainer>ul>li>.box{
+    width: 70%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.content>.content-cantainer>ul>li>.box>h3,
+.content>.content-cantainer>ul>li>.box>.time{
+    color: #1756a9;
+}
+.content>.content-cantainer>ul>li>.box>div>a{
+    color: #c2c0c0;
+}
+.content>.content-cantainer>ul>li>.box>div>a:hover{
+    color: #1756a9;
+    text-decoration: underline;
+}
