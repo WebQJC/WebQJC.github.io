@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css">
+<style>
+*{
+    padding: 0;
+    margin: 0;
+}
+.content>.content-cantainer{
+    margin-top: 20px;
+    margin-left: 10%;
+}
+.content>.content-cantainer>h1{
+    margin-bottom: 40px;
+}
+.content>.content-cantainer>.content{
+    margin-bottom: 30px;
+    border: 1px solid darkblue;
+    width: 80%;
+    padding: 10px;
+    border-radius: 15px;
+}
+.content>.content-cantainer>.content>ul>li>span{
+    color: red;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="top"></div>
+    <div class="content">
+        <div class="content-top">
+            <h1>WebQJC</h1>
+            <div>
+                <div class="left">我与Web前端仔的相识人生</div>
+                <div class="right"><a href="../index.html">返回首页</a></div>
+            </div>
+        </div>
+        <hr/>
+        <div class="content-cantainer">
+            <h1>前端引入icon的方法</h1>
+            <div class="content">
+                <h2>本地已经有仓库使用git提交项目到GitHub</h2>
+                <ul>
+                    <li>1、$ git init</li>
+                    <li>2、$ vim .gitignore<span>（作用是过滤不需要上传的文件）</span></li>
+                    <li>3、$ git status<span>（可以看到已经被修改的文件或上传文件）</span></li>
+                    <li>4、$ git add . <span>（后面有一个点，意思是将你本地所有修改了的文件添加到暂存区）</span></li>
+                    <li>5、$ git commit -m ""<span>（引号里面是你的介绍）</span></li>
+                    <li>6、$ git remote add origin <span>（后面加远程链接，这个origin可以自己取名）</span></li>
+                    <li>7、$ git push -u origin master<span>（将代码推至远程就可以了）</span></li>
+                </ul>
+            </div>
+            <div class="content">
+                <h2>使用clone拷贝代码到本地,修改代码后推送</h2>
+                <ul>
+                    <li>1、$ git init</li>
+                    <li>2、$ git clone<span>（后面加远程链接；或者 命令：git clone -b 分支名 git地址）</span></li>
+                    <li>3、cd 文件名</li>
+                    <li>4、$ git add . <span>（后面有一个点，意思是将你本地所有修改了的文件添加到暂存区）</span></li>
+                    <li>5、$ git commit -m ""<span>（引号里面是你的介绍）</span></li>
+                    <li>6、$ git push<span>（将代码推至远程就可以了）</span></li>
+                </ul>
+            </div>
+            <div class="content">
+                <h2>分支</h2>
+                <ul>
+                    <li>1、$ git init</li>
+                    <li>2、$ git clone<span>（后面加远程链接；或者 命令：git clone -b 分支名 git地址）</span></li>
+                    <li>3、cd 文件名</li>
+                    <li>4、$ git checkout -b dome<span>（创建分支并切换到分支）</span></li>
+                    <li>5、$ git add . <span>（后面有一个点，意思是将你本地所有修改了的文件添加到暂存区）</span></li>
+                    <li>6、$ git commit -m ""<span>（引号里面是你的介绍）</span></li>
+                    <li>7、$ git checkout master <span>（切换到master分支）</span></li>
+                    <li>8、$ git merge dome<span>（合并分支）</span></li>
+                    <li>9、$ git log<span>（查看提交的commit）</span></li>
+                    <li>10、$ git branch -d dome <span>（删除分支）</span></li>
+                    <li>11、$ git branch<span>（查看分支）</span></li>
+                </ul>
+            </div>
+            <div class="content">
+                <h2>下拉远程代码和你本地的代码合并</h2>
+                <ul>
+                    <li>1、$ git init</li>
+                    <li>2、$ git stash<span>（这是将本地代码回滚值至上一次提交的时候，就是没有你新改的代码）</span></li>
+                    <li>3、$ git pull origin master<span>（将远程的拉下来）</span></li>
+                    <li>4、$ git stash pop <span>（将第一步回滚的代码释放出来，相等于将你修改的代码与下拉的代码合并）</span></li>
+                    <li>5、$ git add . <span>（后面有一个点，意思是将你本地所有修改了的文件添加到暂存区）</span></li>
+                    <li>6、$ git commit -m ""<span>（引号里面是你的介绍）</span></li>
+                    <li>7、$ git push<span>（将代码推至远程就可以了）</span></li>
+                    <li><span>8、建议最后再git pull origin master 一下，确保远程的全部拉下来，有的你刚提交完有人又提交了，你再拉一下会避免比的不是最新的问题</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li>我的邮箱:</li>
+            <li>1790311637@qq.com</li>
+        </ul>
+        <ul>
+            <li>我的GitHub:</li>
+            <li>https://github.com/WebQJC</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

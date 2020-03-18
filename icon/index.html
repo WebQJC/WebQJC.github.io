@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css">
+<style>
+*{
+    padding: 0;
+    margin: 0;
+}
+.content>.content-cantainer{
+    margin-top: 20px;
+    margin-left: 10%;
+}
+.content>.content-cantainer>h1{
+    margin-bottom: 40px;
+}
+.content>.content-cantainer>.content{
+    margin-bottom: 30px;
+    border: 1px solid darkblue;
+    width: 50%;
+    padding: 10px;
+    border-radius: 15px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="top"></div>
+    <div class="content">
+        <div class="content-top">
+            <h1>WebQJC</h1>
+            <div>
+                <div class="left">我与Web前端仔的相识人生</div>
+                <div class="right"><a href="../index.html">返回首页</a></div>
+            </div>
+        </div>
+        <hr/>
+        <div class="content-cantainer">
+            <h1>前端引入icon的方法</h1>
+            <div class="content">
+                <h2>第一种：引入Iconfont阿里巴巴矢量库</h2>
+                <div>官网：<a href="https://www.iconfont.cn/">https://www.iconfont.cn/</a></div>
+                <div>使用方法：直接下载所需的icon图标用img引入即可</div>
+                <h3>使用方法：</h3>
+                <span>
+                    直接下载所需的icon图标用img引入即可
+                </span>
+            </div>
+            <div class="content">
+                <h2>第二种：引入font-Awsome库</h2>
+                <div>官网：<a href="http://www.fontawesome.com.cn/">http://www.fontawesome.com.cn/</a></div>
+                <h3>使用方法：</h3>
+                <span>
+                    1、下载font-Awsome库，截取所需的font 和 css两个文件到自己的项目中<br/>
+                    2、使用link引入font-Awsome库<br/>
+                    3、根据官网指示复制如下图的源代码即可<br/>
+                </span>
+                    <img src="./icon.png" alt="">
+            </div>
+            <div class="content">
+                <h2>第三种：调用icomoon库</h2>
+                <div>官网：<a href="https://icomoon.io/">https://icomoon.io/</a></div>
+                <div>使用方法：直接下载下来用img引入即可</div>
+                <h3>使用方法：</h3>
+                <div>1、在官网下载所需的图标，解压下载的字体图标如下,只需font文件放到和index.html的位置</div>
+                <img src="icomoon.png" alt="">
+                <div>2、代码引入到style</div>
+                <div>
+                    @font-face {  /*声明字体  引用字体*/<br/>
+                    &nbsp;&nbsp;font-family: "icomoon";  /*我们自己起名字可以*/<br/>
+                    &nbsp;&nbsp;src:  url('fonts/icomoon.eot?7kkyc2');<br/>
+                    &nbsp;&nbsp;src:  url('fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),<br/>
+                    &nbsp;&nbsp;url('fonts/icomoon.ttf?7kkyc2') format('truetype'),<br/>
+                    &nbsp;&nbsp;url('fonts/icomoon.woff?7kkyc2') format('woff'),<br/>
+                    &nbsp;&nbsp;url('fonts/icomoon.svg?7kkyc2#icomoon') format('svg');<br/>
+                    &nbsp;&nbsp;font-style: normal;  /*倾斜字体正常*/<br/>
+                    }<br/>
+                    em {<br/>
+                    &nbsp;&nbsp;font-family: "icomoon";<br/>
+                    } <br/>    
+                </div>
+                <div>3、图标使用：打开如上图的demo.html，复制图标后的方框</div>
+                <div>&lt;em&gt;&lt;em&gt;</div>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li>我的邮箱:</li>
+            <li>1790311637@qq.com</li>
+        </ul>
+        <ul>
+            <li>我的GitHub:</li>
+            <li>https://github.com/WebQJC</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
